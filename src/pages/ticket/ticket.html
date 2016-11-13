@@ -1,0 +1,61 @@
+<!--
+  Generated template for the Ticket page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ticket</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-card>
+      <ion-card-header>
+        Ticket Details
+     </ion-card-header>
+      <ion-list>
+        <ion-item>
+        <p>Ticket #</p><h3>7FPKY8</h3>
+      </ion-item>
+        <ion-item>
+        <p>Booking Reference</p><h3> 265456544454332 </h3>
+      </ion-item>
+      <ion-item>
+        <ion-label> Enroll for Easy Baggage Service</ion-label>
+        <ion-toggle checked="true"></ion-toggle>
+      </ion-item>
+      </ion-list>
+      <img class="barcode" alt="barcode image comes here" src="../assets/images/barcode5.png"/>
+   </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+         Passenger Details
+     </ion-card-header>
+      <ion-list>
+            <ion-item>
+              <h3>Name:  Arun </h3>
+              <h3>Passport #: G2929253 </h3>
+            </ion-item>
+            <ion-item>
+              <h3>Name:  Rajesh </h3>
+              <h3>Passport #: H4543343 </h3>
+            </ion-item>
+            <ion-item>
+              <h3>Name:  Keerthi </h3>
+              <h3>Passport #: H6545545 </h3>
+            </ion-item>
+      </ion-list>
+  </ion-card>
+
+
+    <button ion-button icon-right large full (click)="bookTab()">
+         Book A Slot
+    </button>  
+
+</ion-content>

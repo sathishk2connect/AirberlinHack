@@ -1,0 +1,57 @@
+<!--
+  Generated template for the GetBooking page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  hide-nav-bar="true">
+  <form #loginForm="ngForm" novalidate>
+     <ion-list>
+        <ion-item>
+           <a class="danger" ion-item href="https://join.skype.com/bot/7b605e0e-80e1-45d8-9d2a-b8cba93a339b">Reach us on Skype</a>
+        </ion-item>
+       <ion-item>
+        <ion-label fixed>Booking ID</ion-label>
+        <ion-input [(ngModel)]="login.bookingid" name="bookingid" type="text" #bookingid="ngModel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+     </ion-list>
+    <button ion-button icon-right large full (click)="goto(loginForm)">Retrieve Booking</button>
+  </form>  
+  
+   <ion-card>
+        <ion-card-content>
+            <ion-card-title>
+               7FPKY8
+            </ion-card-title>
+           <ion-list>
+              <ion-item>
+                <ion-label>Baggage Pickup</ion-label>
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+              </ion-item>
+               <ion-item>
+                <ion-label>Food Delivery</ion-label>
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-label>Car Pickup</ion-label>
+                <ion-checkbox color="danger" checked="false"></ion-checkbox>
+              </ion-item>
+            </ion-list>
+             <ion-list>
+                <button ion-button icon-right large full (click)="showAfter()">Find Booking Details</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card> 
+
+</ion-content>
